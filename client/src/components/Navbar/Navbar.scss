@@ -1,0 +1,52 @@
+@import '../../basecss.scss';
+.navbar {
+    background-color: $bg-nav;
+    height: $height-navbar;
+    display: flex;
+
+    align-items: center;
+    ul {
+        flex-basis: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        li {
+            cursor: pointer;
+            margin: 0.25rem;
+            background-color: rgba(#ccc, 0.4);
+            border-radius: $bd-r;
+            padding: 0.5rem;
+            transition: 0.1s;
+            color: #fff;
+            span {
+                margin-left: 0.5rem;
+            }
+            &:hover {
+                background-color: rgba(#ccc, 0.7);
+            }
+            input {
+                border: none;
+                background-color: transparent;
+                font-size: 1rem;
+                outline: none;
+                color: #fff;
+
+                &:focus::parent {
+                    background-color: rgba(#ccc, 0.7);
+                }
+            }
+        }
+        &.nav_menu_2 {
+            justify-content: flex-end;
+        }
+    }
+    .logo {
+        flex-shrink: 0;
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+}

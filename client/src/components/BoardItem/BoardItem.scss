@@ -1,0 +1,17 @@
+@import '../../basecss.scss';
+
+.board_item {
+    background-color: rgb(96, 28, 255);
+    width: 180px;
+    height: 91px;
+    margin: 4px;
+    padding: 0.5rem;
+    display: flex;
+    border-radius: $bd-r;
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.25rem;
+        width: 100%;
+    }
+}

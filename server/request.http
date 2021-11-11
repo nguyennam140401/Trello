@@ -1,0 +1,52 @@
+GET http://localhost:5000/board/
+
+################################
+POST http://localhost:5000/board
+content-type: application/json
+
+{
+    "title": "Board-2"
+}
+################################
+
+POST http://localhost:5000/column
+content-type: application/json
+
+{
+    "boardId": "6129adc4a562e04cc024d991",
+    "title": "Column-2"
+}
+
+################################
+PUT http://localhost:5000/column/612e435733713980347ead3d
+content-type: application/json
+
+{
+    "title": "Column1-updated"
+}
+################################    
+DELETE  http://localhost:5000/column/612e435733713980347ead3d
+
+################################
+
+POST http://localhost:5000/task
+content-type: application/json
+
+{
+    "boardId": "6129adc4a562e04cc024d991",
+    "columnId": "612e435733713980347ead3d",
+    "title": "Task-3"
+}
+
+################################################################
+PUT http://localhost:5000/task/612da3ca5db6824751cac696
+content-type: application/json
+
+{
+    "title": "Task3-Updatedd"
+}
+
+################################
+DELETE http://localhost:5000/task/612da3ca5db6824751cac696
+################################
+GET http://localhost:5000/board/6129adc4a562e04cc024d991
